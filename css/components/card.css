@@ -1,0 +1,22 @@
+.card {
+  display: flex; /* Enable Flexbox for the card */
+  align-items: center; /* Vertically center content */
+  justify-content: flex-start; /* Align content to the left */
+  padding: 20px; /* Add spacing inside the card */
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light border for definition */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card img {
+  width: 150px; /* Fixed width for the image */
+  border-radius: 4px; /* Slight rounding for the image */
+}
+
+.card h3 {
+  flex-grow: 1; /* Allow the text to grow */
+  padding-left: 20px; /* Add space between the image and text */
+  font-size: 1.2rem; /* Adjust font size */
+  color: #333; /* Darker text color */
+}

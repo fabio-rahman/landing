@@ -1,0 +1,24 @@
+.cards {
+  display: flex; /* Enable Flexbox for the grid */
+  flex-wrap: wrap; /* Allow wrapping to the next row */
+  gap: 20px; /* Space between cards */
+  justify-content: space-around; /* Space out cards evenly */
+  padding: 20px; /* Padding around the grid */
+  background-color: #f4f4f9; /* Light background for the grid */
+}
+
+.card {
+  flex-basis: 250px; /* Each card occupies at least 250px */
+  flex-grow: 1; /* Allow cards to grow equally */
+  margin: 10px; /* Space around each card */
+}
+@media (max-width: 768px) {
+  .cards {
+    justify-content: center; /* Center cards on small screens */
+  }
+
+  .card {
+    flex-basis: 100%; /* Cards stack vertically */
+    margin: 10px 0; /* Adjust spacing for stacked cards */
+  }
+}
